@@ -7,7 +7,11 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body class="bg-light">
 
   <!-- HERO -->
@@ -15,48 +19,130 @@
     <h1 class="fw-bold">David Velazco</h1>
     <p class="lead">Desarrollador Web</p>
     <p>PHP · MySQL · JavaScript</p>
+
+    <div class="mt-3">
+      <a href="https://www.linkedin.com/in/david-velazco-7101961b1/"
+         target="_blank"
+         class="btn btn-outline-light me-2">
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+
+      <a href="mailto:davidvedg123@gmail.com"
+         class="btn btn-outline-light">
+        <i class="bi bi-envelope-fill"></i> Email
+      </a>
+    </div>
   </header>
 
   <!-- SOBRE MI -->
   <section class="container my-5">
     <h2 class="mb-3">Sobre mí</h2>
     <p>
-      Tecnico Superior en desarrollo de Software con enfoque en paginas webs. Tengo experiencia creando sistemas completos con backend en PHP y
-      base de datos MySQL.
+      Comencé mi carrera como <strong>Técnico Superior en Desarrollo de Software</strong> en 2022,
+      enfocándome principalmente en el desarrollo de aplicaciones web.
+      Tengo experiencia creando sistemas completos, desde el diseño de interfaces
+      hasta el desarrollo del backend con <strong>PHP</strong> y bases de datos <strong>MySQL</strong>.
     </p>
+    <p>
+      Me interesa seguir aprendiendo nuevas tecnologías y buenas prácticas,
+      desarrollar soluciones funcionales y aportar valor real a los proyectos en los que participo.
+    </p>
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section class="container my-5">
+    <h2 class="mb-3">Educación</h2>
+
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Instituto Macedo Martínez</h5>
+        <p class="card-text">
+          Estudié durante 5 años en el Instituto Macedo Martínez, donde adquirí una base sólida
+          en programación, lógica computacional y desarrollo de software.
+          Durante mi formación trabajé con proyectos prácticos orientados al desarrollo web,
+          fortaleciendo mis conocimientos técnicos y mi capacidad para resolver problemas.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- SKILLS -->
   <section class="container my-5">
-    <h2 class="mb-3">Tecnologías</h2>
-    <div class="row text-center">
-      <div class="col-md-3">PHP</div>
-      <div class="col-md-3">MySQL</div>
-      <div class="col-md-3">JavaScript</div>
-      <div class="col-md-3">HTML / CSS</div>
+    <h2 class="mb-4">Skills</h2>
+
+    <!-- Lenguajes -->
+    <h5 class="mb-3">Lenguajes de Programación</h5>
+    <div class="mb-4">
+      <span class="badge bg-secondary me-2 p-2">
+        <i class="bi bi-filetype-html"></i> HTML
+      </span>
+      <span class="badge bg-secondary me-2 p-2">
+        <i class="bi bi-filetype-css"></i> CSS
+      </span>
+      <span class="badge bg-secondary me-2 p-2">
+        <i class="bi bi-filetype-js"></i> JavaScript
+      </span>
+      <span class="badge bg-secondary me-2 p-2">
+        <i class="bi bi-filetype-php"></i> PHP
+      </span>
+    </div>
+
+    <!-- Frameworks -->
+    <h5 class="mb-3">Frameworks y Librerías</h5>
+    <div class="mb-4">
+      <span class="badge bg-info text-dark me-2 p-2">
+        <i class="bi bi-bootstrap"></i> Bootstrap
+      </span>
+    </div>
+
+    <!-- Herramientas -->
+    <h5 class="mb-3">Software y Herramientas</h5>
+    <div>
+      <span class="badge bg-dark me-2 p-2">
+        <i class="bi bi-code-slash"></i> Visual Studio Code
+      </span>
+      <span class="badge bg-dark me-2 p-2">
+        <i class="bi bi-git"></i> Git
+      </span>
     </div>
   </section>
 
-  <!-- PROYECTOS -->
+  <!-- PROYECTO DESTACADO -->
   <section class="container my-5">
     <h2 class="mb-4">Proyecto Destacado</h2>
 
     <div class="card shadow">
-      <img src="listado_usuarios.png" class="card-img-top">
+      <img src="Inicio_login.png" class="card-img-top" alt="Sistema odontológico">
 
       <div class="card-body">
         <h5 class="card-title">Sistema de Turnos Odontológicos</h5>
+
         <p class="card-text">
-          Sistema web desarrollado desde cero para la gestión de turnos, pacientes, secretarios y odontologos para tanto clinica como en
-          consultorios odontológicos. Permite administrar pacientes, horarios, reservas y manejo de un pequeño odontograma.
+          Sistema web desarrollado desde cero para la gestión de turnos, pacientes,
+          secretarios y odontólogos. Permite administrar horarios, reservas,
+          pacientes y un odontograma básico.
         </p>
 
-        <p><strong>Tecnologías:</strong> PHP, MySQL, JavaScript, CSS</p>
+        <!-- Tecnologías visuales -->
+        <div class="mb-3">
+          <span class="badge bg-secondary me-2">
+            <i class="bi bi-filetype-php"></i> PHP
+          </span>
+          <span class="badge bg-secondary me-2">
+            <i class="bi bi-database"></i> MySQL
+          </span>
+          <span class="badge bg-secondary me-2">
+            <i class="bi bi-filetype-js"></i> JavaScript
+          </span>
+          <span class="badge bg-secondary me-2">
+            <i class="bi bi-filetype-css"></i> CSS
+          </span>
+        </div>
 
         <a href="https://github.com/davidtext/EXPERIMENTO_ODONTOLINK"
-           class="btn btn-primary"
+           class="btn btn-dark"
            target="_blank">
-          Ver código en GitHub
+          <i class="bi bi-github"></i> Ver código en GitHub
         </a>
       </div>
     </div>
@@ -64,13 +150,23 @@
 
   <!-- CONTACTO -->
   <section class="container my-5">
-    <h2 class="mb-3">Contacto</h2>
-    <p>Email: <strong>davidvedg123@gmail.com</strong></p>
-    <p>GitHub:
-      <a href="https://github.com/davidtext" target="_blank">
-        github.com/davidtext
+    <h2 class="mb-4">Contacto</h2>
+
+    <div class="d-flex flex-wrap gap-3">
+      <a href="mailto:davidvedg123@gmail.com" class="btn btn-outline-primary">
+        <i class="bi bi-envelope-fill"></i> Email
       </a>
-    </p>
+
+      <a href="https://wa.me/543704811577" class="btn btn-outline-success" target="_blank">
+        <i class="bi bi-whatsapp"></i> WhatsApp
+      </a>
+
+      <a href="https://www.linkedin.com/in/david-velazco-7101961b1/"
+         class="btn btn-outline-info"
+         target="_blank">
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+    </div>
   </section>
 
   <!-- FOOTER -->
